@@ -2,7 +2,7 @@
 
 require 'active_support/core_ext/integer/time'
 
-Rails.application.configure do
+Rails.application.configure do 
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded any time
@@ -17,9 +17,7 @@ Rails.application.configure do
   config.consider_all_requests_local = true
 
   # Allow access when running in docker
-  unless Rails.env.production?
-    config.web_console.whitelisted_ips = ["172.16.0.0/12", "192.168.0.0/16"]
-  end
+  # config.web_console.whitelisted_ips = ["172.16.0.0/12", "192.168.0.0/16"]
 
   # Enable server timing
   config.server_timing = true
