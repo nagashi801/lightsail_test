@@ -17,7 +17,9 @@ Rails.application.configure do
   config.consider_all_requests_local = true
 
   # Allow access when running in docker
-  config.web_console.whitelisted_ips = ["172.16.0.0/12", "192.168.0.0/16"]
+  unless Rails.env.production?
+    config.web_console.whitelisted_ips = ["172.16.0.0/12", "192.168.0.0/16"]
+  end
 
   # Enable server timing
   config.server_timing = true
