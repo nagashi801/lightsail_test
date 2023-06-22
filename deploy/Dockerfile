@@ -2,7 +2,7 @@ ARG RUBY_VERSION=3.2.2
 
 FROM ruby:${RUBY_VERSION}-slim
 
-ENV APP_ROOT /myapp
+ENV APP_ROOT /rails_test_app
 
 RUN mkdir $APP_ROOT
 
