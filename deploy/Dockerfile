@@ -8,7 +8,7 @@ RUN mkdir $APP_ROOT
 
 WORKDIR $APP_ROOT
 
-COPY docker/deploy/staging/entrypoint.sh /usr/bin/
+COPY deploy/entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 
 COPY Gemfile $APP_ROOT/Gemfile
