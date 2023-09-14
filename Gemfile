@@ -55,7 +55,7 @@ gem "bundler-audit"
 gem "rubocop-rails"
 
 group :production do
-  gem 'unicorn', '5.4.1'
+  gem 'unicorn', '6.1.0'
 end
 
 group :development, :test do
