@@ -80,5 +80,7 @@ test:
 production:
   <<: *default
   database: lightsail_app_production
-  username: lightsail_app
-  password: <%= ENV["LIGHTSAIL_APP_DATABASE_PASSWORD"] %>
+  username: dbmasteruser
+  password: =XEqEsE%_b!8p|f_l^JU]%lSpw5(h,7B
+  host: ls-e888fa82beaacb0439c1527d981afe1f362b77d7.cyad8bc24p6x.ap-northeast-1.rds.amazonaws.com
+  port: 5432
